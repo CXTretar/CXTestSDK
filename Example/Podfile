@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'CXTestSDK_Example' do
+  pod 'CXTestSDK', :path => '../'
+
+  target 'CXTestSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
