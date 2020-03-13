@@ -1,0 +1,45 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - CXTestSDK (0.1.0):
+    - AFNetworking
+    - Masonry
+    - SVProgressHUD
+  - Masonry (1.1.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - CXTestSDK (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - Masonry
+    - SVProgressHUD
+
+EXTERNAL SOURCES:
+  CXTestSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CXTestSDK: b60396008f0d45fc7e906a19d8c12085ee2a8759
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 493e39175c51f355ee8c6dfc7468f5a54b9dbbc6
+
+COCOAPODS: 1.8.4

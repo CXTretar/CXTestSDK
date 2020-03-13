@@ -1,0 +1,36 @@
+{
+  "name": "CXTestSDK",
+  "version": "0.1.0",
+  "summary": "A short description of CXTestSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/CXTretar/CXTestSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "CXTretar": "misscxuan@163.com"
+  },
+  "source": {
+    "git": "https://github.com/CXTretar/CXTestSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CXTestSDK/Classes/**/*",
+  "vendored_frameworks": [
+    "CXTestSDK/Classes/CXPrivateSDK.framework"
+  ],
+  "dependencies": {
+    "AFNetworking": [
+
+    ],
+    "Masonry": [
+
+    ],
+    "SVProgressHUD": [
+
+    ]
+  }
+}
