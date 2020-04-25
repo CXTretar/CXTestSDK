@@ -9,7 +9,7 @@
 
 @interface FPM_ApiManager : NSObject
 
-+ (void)show;
++ (void)showWithView:(UIView *)view;
 
 @end
 

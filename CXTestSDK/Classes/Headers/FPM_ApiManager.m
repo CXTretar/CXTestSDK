@@ -15,8 +15,13 @@
 
 @implementation FPM_ApiManager
 
-+ (void)show {
-    [MBProgressHUD FPM_ShowLoading:@"正在加载..."];
++ (void)showWithView:(UIView *)view {
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+    hud.mode = MBProgressHUDModeDeterminate;
+    hud.backgroundView.style = MBProgressHUDBackgroundStyleSolidColor;
+    hud.backgroundView.color = [UIColor colorWithWhite:0.f alpha:0.6f];
+    hud.mode = MBProgressHUDModeText;
+    hud.label.text = @"正在加载...";
 }
 
 

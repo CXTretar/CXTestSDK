@@ -3,9 +3,9 @@
 #该脚本仅适用于cocoapods生成的framework静态库
 frameworkName='CXTestSDK'
 #修改
-oldversion='0.1.0'
+oldversion='0.1.1'
 #修改
-version='0.1.1'
+version='0.1.2'
 message='版本调整'
 
 cd Example
