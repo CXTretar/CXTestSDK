@@ -7,6 +7,7 @@
 //
 
 #import "CXViewController.h"
+#import <CXTestSDK/FPM_ApiManager.h>
 
 @interface CXViewController ()
 
@@ -26,7 +27,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self presentViewController:[TestViewController new] animated:YES completion:nil];
+    [FPM_ApiManager show];
 }
 
 

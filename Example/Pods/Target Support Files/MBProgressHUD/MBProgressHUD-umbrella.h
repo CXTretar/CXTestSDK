@@ -10,8 +10,8 @@
 #endif
 #endif
 
-#import "FPM_ApiManager.h"
+#import "MBProgressHUD.h"
 
-FOUNDATION_EXPORT double CXTestSDKVersionNumber;
-FOUNDATION_EXPORT const unsigned char CXTestSDKVersionString[];
+FOUNDATION_EXPORT double MBProgressHUDVersionNumber;
+FOUNDATION_EXPORT const unsigned char MBProgressHUDVersionString[];
 

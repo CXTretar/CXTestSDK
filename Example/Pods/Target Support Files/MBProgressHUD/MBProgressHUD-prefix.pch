@@ -10,8 +10,3 @@
 #endif
 #endif
 
-#import "FPM_ApiManager.h"
-
-FOUNDATION_EXPORT double CXTestSDKVersionNumber;
-FOUNDATION_EXPORT const unsigned char CXTestSDKVersionString[];
-

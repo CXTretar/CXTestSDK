@@ -36,7 +36,11 @@ TODO: Add long description of the pod here.
   #   'CXTestSDK' => ['CXTestSDK/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'CXTestSDK/Classes/Headers/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+                              
+  s.dependency 'AFNetworking'
+  s.dependency 'Masonry'
+  s.dependency 'SVProgressHUD'
+  s.dependency 'MBProgressHUD'
 end

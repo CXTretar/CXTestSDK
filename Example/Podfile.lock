@@ -17,8 +17,10 @@ PODS:
   - CXTestSDK (0.1.0):
     - AFNetworking
     - Masonry
+    - MBProgressHUD
     - SVProgressHUD
   - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
@@ -28,6 +30,7 @@ SPEC REPOS:
   trunk:
     - AFNetworking
     - Masonry
+    - MBProgressHUD
     - SVProgressHUD
 
 EXTERNAL SOURCES:
@@ -36,8 +39,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  CXTestSDK: b60396008f0d45fc7e906a19d8c12085ee2a8759
+  CXTestSDK: b4fda272c5c28e5cc447f2f6af41f79f2a99125c
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
 PODFILE CHECKSUM: 493e39175c51f355ee8c6dfc7468f5a54b9dbbc6

@@ -19,9 +19,7 @@
     "ios": "8.0"
   },
   "source_files": "CXTestSDK/Classes/**/*",
-  "vendored_frameworks": [
-    "CXTestSDK/Classes/CXPrivateSDK.framework"
-  ],
+  "public_header_files": "CXTestSDK/Classes/Headers/*.h",
   "dependencies": {
     "AFNetworking": [
 
@@ -30,6 +28,9 @@
 
     ],
     "SVProgressHUD": [
+
+    ],
+    "MBProgressHUD": [
 
     ]
   }
