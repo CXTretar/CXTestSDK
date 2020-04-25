@@ -22,8 +22,24 @@
     hud.backgroundView.color = [UIColor colorWithWhite:0.f alpha:0.6f];
     hud.mode = MBProgressHUDModeText;
     hud.label.text = @"正在加载...";
+    UIWindow* window = nil;
     
-    NSLog(@"window %@--- view %@", (UIView*)[UIApplication sharedApplication].delegate.window, [MBProgressHUD getCurrentWindowVC].view);
+    if (@available(iOS 13.0, *))
+    {
+        for (UIWindowScene* windowScene in [UIApplication sharedApplication].connectedScenes)
+        {
+            if (windowScene.activationState == UISceneActivationStateForegroundActive)
+            {
+                window = windowScene.windows.firstObject;
+                
+                break;
+            }
+        }
+    }else{
+        window = [UIApplication sharedApplication].keyWindow;
+    }
+    
+    NSLog(@"window %@--- view", window);
 }
 
 
