@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - CXTestSDK (0.1.1):
+  - CXTestSDK (0.1.2):
     - AFNetworking
     - Masonry
     - MBProgressHUD
@@ -39,7 +39,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  CXTestSDK: f1ceb3201636dd270e1852ef0712aa1d13af81c6
+  CXTestSDK: d14d4dba32332177efa93d4ea2e82b83fa337d9d
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6

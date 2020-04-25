@@ -14,5 +14,7 @@
 + (void)FPM_ShowLoading:(NSString*)message timer:(int)aTimer completion:(void(^)(void))completionBlock;
 + (void)FPM_HideHUD;
 
++ (UIViewController*)getCurrentWindowVC;
+
 @end
 

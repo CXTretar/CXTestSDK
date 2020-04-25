@@ -22,6 +22,8 @@
     hud.backgroundView.color = [UIColor colorWithWhite:0.f alpha:0.6f];
     hud.mode = MBProgressHUDModeText;
     hud.label.text = @"正在加载...";
+    
+    NSLog(@"window %@--- view %@", (UIView*)[UIApplication sharedApplication].delegate.window, [MBProgressHUD getCurrentWindowVC].view);
 }
 
 
