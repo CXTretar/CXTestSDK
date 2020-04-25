@@ -10,7 +10,7 @@
 @implementation MBProgressHUD (FPMHUD)
 
 + (MBProgressHUD*)createHUDWithMessage:(NSString*)message isWindow:(BOOL)isWindow {
-    UIView  *view = isWindow? (UIView*)[UIApplication sharedApplication].delegate.window:[self getCurrentUIVC].view;
+    UIView  *view = isWindow? [self getCurrentWindow]:[self getCurrentUIVC].view;
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.mode = MBProgressHUDModeText;
     hud.margin = 10.f;
@@ -50,8 +50,7 @@
 }
 
 + (void)FPM_ShowLoading:(NSString*)message {
-    UIView *view = (UIView*)[UIApplication sharedApplication].delegate.window;
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[self getCurrentWindow] animated:YES];
     hud.mode = MBProgressHUDModeDeterminate;
     hud.backgroundView.style = MBProgressHUDBackgroundStyleSolidColor;
     hud.backgroundView.color = [UIColor colorWithWhite:0.f alpha:0.6f];
@@ -65,8 +64,7 @@
 }
 
 + (void)FPM_HideHUD {
-    UIView  *window = (UIView*)[UIApplication sharedApplication].delegate.window;
-    [self hideHUDForView:window animated:YES];
+    [self hideHUDForView:[self getCurrentWindow] animated:YES];
     [self hideHUDForView:[self getCurrentUIVC].view animated:YES];
 }
 
@@ -162,6 +160,25 @@
     return cc;
 }
 
-
++ (UIWindow *)getCurrentWindow {
+    UIWindow* window = nil;
+    
+    if (@available(iOS 13.0, *))
+    {
+        for (UIWindowScene* windowScene in [UIApplication sharedApplication].connectedScenes)
+        {
+            if (windowScene.activationState == UISceneActivationStateForegroundActive)
+            {
+                window = windowScene.windows.firstObject;
+                
+                break;
+            }
+        }
+    }else{
+        window = [UIApplication sharedApplication].keyWindow;
+    }
+    
+    return window;
+}
 
 @end
